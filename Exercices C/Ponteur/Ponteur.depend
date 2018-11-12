@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1541407807 source:/home/ajc98/Documents/Exercices C/Ponteur/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
