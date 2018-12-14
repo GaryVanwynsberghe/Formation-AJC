@@ -5,25 +5,42 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    // Création du pixmap
-    QPixmap *pixmap = new QPixmap(30,30);
-    pixmap->fill(Qt::transparent);
-    QPainter *painter= new QPainter(pixmap);
-    // Définition du stylo et de la brosse
-    QColor black(Qt::black);
-    QColor red(Qt::red);
-    QPen pen(black);
-    QBrush brush(red);
-    // C'est sur le painter qu'on applique une ligne
-    painter->setPen(pen);
-    painter->setBrush(brush);
-    painter->drawLine(10,10,150,150);
-    painter->end();
-    // Une fois la painter fermé on sauve le pixmap dans un fichier
-    pixmap->save("fichier.png");
 
+    /*for(int i = 33; i <= 126; i++)
+    {
+        QChar maValeur(i);
+        QString maLettre(maValeur);
 
+        QPixmap *pixmap;
+        QPainter *painter;
 
+        QPainter painter(this);
+        pixmap->fill(Qt::transparent);
+        //QPainter painter (pixmap);
+
+        /*QPen pen;
+        pen.setStyle(Qt::DashDotLine);
+        pen.setWidth(3);
+        pen.setBrush(Qt::red);
+        pen.setCapStyle(Qt::RoundCap);
+        pen.setJoinStyle(Qt::RoundJoin);*/
+
+        /*QColor black(Qt::black);
+        QColor couleur(Qt::white);
+        QPen pen(black);
+        QBrush brush(couleur);
+
+        painter.setPen(pen);
+        painter.setBrush(brush);
+
+        QRectF rectangle (100, 80, 250, 150);
+        painter.setFont(QFont("Arial",50));
+        painter.drawRoundRect(rectangle, 15, 15);
+        painter.drawText(rectangle, Qt::AlignCenter, maLettre);
+
+        painter.end();
+        pixmap->save(QString("fichier %1.png").arg(maLettre));
+    };*/
 
 
 
