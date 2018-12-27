@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QSqlError>
 #include <QDebug>
-
+#include <QTime>
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -11,7 +11,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
+    QTime time = QTime::currentTime();
+    qDebug() << time;
 
     comsimp = new QSqlTableModel();
     ui->tableView->setModel(comsimp);

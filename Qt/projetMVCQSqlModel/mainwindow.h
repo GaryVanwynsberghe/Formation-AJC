@@ -21,7 +21,7 @@ private:
     Ui::MainWindow *ui;
 
 private slots:
-    void QueryAfficheInfo(QModelIndex);
+    void AfficheInfo(QModelIndex);
 };
 
 #endif // MAINWINDOW_H

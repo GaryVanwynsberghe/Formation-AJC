@@ -26,6 +26,7 @@ public:
     QNetworkAccessManager *manager;
 
 
+
     qint64 t1;
     qint64 t2;
     qint64 t3;
